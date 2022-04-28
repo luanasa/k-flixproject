@@ -1,0 +1,78 @@
+* {
+    --white: #EBECEC;
+    --timing: 10s;
+    --rosa:	#DB7093;
+}
+
+
+body {
+	background: #141414;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 300;
+	color: #6D6D6D;
+}
+
+body h1 {
+		color: var(--rosa);
+		font-size: 50px;
+	}
+
+	a {
+		padding: 5px 15px;
+		color: #6D6D6D;
+		font-size: 17px;
+		text-decoration: none;
+		text-transform: uppercase;
+		border: 1px solid #6D6D6D;
+		transition: all 300ms ease;
+    }
+		a:hover {
+			color:  var(--rosa);
+			border: 1px solid var(--white);
+            opacity: 0;
+            animation: fade-in 500ms ease 200ms 1 forwards;
+}
+
+.logo {
+	width: 150px; height:30px;
+	margin: 15px 60px;
+	background: url('../img/kflix_logo.png');
+	background-size: cover;
+}
+
+.wrapper {
+	margin: 100px 0;
+	text-align: center;
+}
+
+.profile-wrap {
+		display: flex;
+		flex-wrap:wrap;
+		justify-content: space-between;
+		max-width: 800px;
+		margin: 50px auto;
+	}
+
+.profile{ 
+	width: 150px;
+}
+
+.profile-icon {
+		width: 150px; height:150px;
+		border: 6px solid #1f1f1f;
+		transition: all 300ms ease;
+	}
+
+.profile-name {
+		margin: 20px 0;
+		line-height: 1.25em;
+		transition: all 300ms ease;
+	}
+
+.profile:hover .profile-icon {
+	border: 6px solid var(--rosa);
+}
+.profile:hover .profile-name {
+	color: var(--white);
+}
+

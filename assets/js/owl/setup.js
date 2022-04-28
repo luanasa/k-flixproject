@@ -20,8 +20,13 @@ function assistir(){
 	window.open("https://www.youtube.com/watch?v=wOsRyPXAg4Y");
 }
 
-function trocar(elemento){
+function trocar(element){
 	//alert("Trocar texto");
 	//document.getElementById("mousemove").innerHTML = "Obrigada por passar o mouse";
-	elemento.innerHTML = "ADICIONADO A MINHA LISTA";
+	element.innerHTML = "ADICIONADO A MINHA LISTA";
 }
+
+function logarUser() {
+    window.location.replace("/index.html");
+}
+
