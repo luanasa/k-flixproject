@@ -1,4 +1,4 @@
-# k-flixproject
+# 🍿 K-Flix
 Projeto de plataforma de streaming de novelas, conteúdo k-pop e programas de TV coreanos. 
 
 Platform project for streaming Korean dramas, k-pop content and korean TV shows.  
