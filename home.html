@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/home.css">
+    <link rel="shortcut icon" type="imagex/png" href="./img/K.ico">
+
+    <!--responsividade-->
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <!--owl css-->
+    <link rel="stylesheet" href="./assets/style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/style/owl/owl.theme.default.min.css">
+
+    <title>K-FLIX</title>
+</head>
+<body>
+    <header>
+            <nav class="nav-container">
+                <div class="logo">
+                    <img src="./assets/img/kflix_logo.png" alt="logo">
+                    <a href="#">Inicio</a>
+                    <a href="#">Doramas</a>
+                    <a href="#">K-pop</a>
+                    <a href="#">Filmes</a>
+                </div>
+
+                <div class="side-options">
+                    <a id="mouseSearch" onclick="searchData()" href="#"><i class="fas fa-search sub-nav-logo"></i></a>
+                    <a href="#"><i class="fas fa-bell sub-nav-logo"></i></a>
+                    <img class="profile-icon-index" src="/assets/img/profile-1.png" alt="perfil photo icon">
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="outdoor-movie">
+            <div>
+                <h3 class="titulo">VINCENZO</h3>
+                <p class="descricao">Aos 8 anos de idade, Park Joo-Hyung foi para Itália depois de ter sido adotado. É agora adulto e tem o nome de Vincenzo Cassano. <br/> É advogado, que trabalha para a Máfia como consultor. Por causa de uma guerra entre grupos mafiosos, ele voa para a Coreia do Sul.<br/> Na Coreia, ele envolve-se com a advogada Hong Cha-Young. Ela é o tipo de advogado que fará tudo para ganhar um caso.</p>
+               
+                <div>
+                    <button onclick="assistir()" class="botao">
+                        <i class="fas fa-play"></i>
+                        ASSISTIR AGORA
+                    </button>            
+                    <button onclick="trocar(this)" class="botao">
+                        <i class="fas fa-plus"></i>
+                        ADICIONAR A MINHA LISTA
+                    </button>  
+                </div> 
+            </div>
+                     
+
+        </div>
+    </main>
+
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div>
+                <img src="./assets/img/img1.jpg" alt="">
+            </div>
+            <div>
+                <img src="./assets/img/img2.jpg" alt="">
+            </div>
+            <div>
+                <img src="./assets/img/img3.jpg" alt="">
+            </div>
+            <div>
+                <img src="./assets/img/img4.jpg" alt="">
+            </div>
+            <div>
+                <img src="./assets/img/img5.jpg" alt="">
+            </div>
+            <div>
+                <img src="./assets/img/img6.jpg" alt="">
+            </div>
+            <div>
+                <img src="./assets/img/img7.jpg" alt="">
+            </div>
+            <div>
+                <img src="./assets/img/img8.jpg" alt="">
+            </div>
+            <div>
+                <img src="./assets/img/img9.jpg" alt="">
+            </div>
+            <div>
+                <img src="./assets/img/img10.jpg" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2021 K-Flix All rights reserved. </p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/9bdd1d36ae.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/owl/jquery.min.js"></script>
+    <script src="./assets/js/owl/owl.carousel.min.js"></script>
+    <script src="./assets/js/owl/setup.js"></script>
+    
+
+</body>
+</html>

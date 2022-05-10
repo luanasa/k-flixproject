@@ -27,6 +27,6 @@ function trocar(element){
 }
 
 function logarUser() {
-    window.location.replace("/index.html");
+    window.location.replace("/home.html");
 }
 
