@@ -17,8 +17,9 @@
     flex-direction: row;
     justify-content: space-evenly;
     gap: 1rem;
-    margin-top: 173px;
-    width: 100%;
+    margin-top: -2%;
+    max-width: 100%;
+    flex-wrap: wrap;
 }
 
 .loginData{
@@ -230,6 +231,8 @@
   color: #DB7093;
 }
 
+/* FOOTER */
+
 
 p{
 
@@ -253,8 +256,21 @@ p a:hover{
 }
 
 .loginContainer svg {
-width: 70rem;
-height: 70rem;
-margin-top: -13rem;
+max-width: 45rem;
+max-height: auto;
+margin-top: 1rem;
 margin-right: -10rem;
+}
+
+@media screen and (max-width: 400px) {
+  .loginContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-end;
+    align-items: center;
+    margin: -1rem;
+  }
+
 }

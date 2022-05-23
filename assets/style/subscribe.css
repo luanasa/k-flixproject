@@ -123,6 +123,7 @@ body {
   text-align: left;
   margin-top: 10px;
   gap: 0.4rem;
+
 }
 
 .box {
@@ -213,8 +214,16 @@ body {
 
 footer{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-items: center;
     padding: 15px 15px;
     margin: 30px;
     width: 100%;
 }
+
+footer p {
+  display: flex;
+  justify-content: center;
+  color: #EA454C;
+}
+
