@@ -9,52 +9,42 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&family=Radio+Canada&display=swap" rel="stylesheet">
   <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
-  <script src="main.js"></script>
 </head>
-<body>
-  <div class="wrapper">
+<body class="wrapper">
+    <nav>  
+      <a id="logo" href="#home">
+        <img src="./assets/img/logo.svg" alt="K-flix logo">
+      </a>
 
-    <!-- HEADER -->
-    <header>
-      <div class="kflixLogo">
-        <a id="logo" href="#home">
-          <svg width="278" height="76" viewBox="0 0 278 76" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect width="278" height="76" fill="url(#pattern0)"/>
-<defs>
-<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#image0_2_2" transform="scale(0.00359712 0.0131579)"/>
-</pattern>
-<image id="image0_2_2" width="278" height="76" xlink:href="data:image/png;base64,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"/>
-</defs>
-          </svg>
-</div>      
-      <nav class="main-nav">                
-        <a href="#home">Home</a>
-        <a href="#tvShows">TV Shows</a>
-        <a href="#movies">Movies</a>
-        <a href="#originals">More</a>
-        <a href="#">Recently Added</a>
-        <a target="_blank" href="https://github.com/luanasa">Portfolio</a>        
-      </nav>
-      <nav class="sub-nav">
-        <div class="group">
-          <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><g><path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path></g></svg>
-          <input placeholder="Search" type="search" class="input">
-        </div>
-        <a href="#"><i class="fas fa-bell sub-nav-logo"></i></a>
-        <a class="avatar" href="#">
-            <img src="./assets/img/profile-1.png" alt="user avatar" />
-        </a>
-        <a href="./home.html">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 18.25C11.5858 18.25 11.25 18.5858 11.25 19C11.25 19.4142 11.5858 19.75 12 19.75H18C18.9665 19.75 19.75 18.9665 19.75 18V6C19.75 5.0335 18.9665 4.25 18 4.25H12C11.5858 4.25 11.25 4.58579 11.25 5C11.25 5.41421 11.5858 5.75 12 5.75L18 5.75C18.1381 5.75 18.25 5.86193 18.25 6L18.25 18C18.25 18.1381 18.1381 18.25 18 18.25H12Z" fill="pink"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.25 13.1152C3.25 13.8056 3.80964 14.3652 4.5 14.3652H9.1126C9.11912 14.4386 9.12595 14.512 9.13308 14.5854L9.18711 15.1413C9.26954 15.9894 10.1701 16.4973 10.9386 16.1291C12.5728 15.3459 14.1514 14.1706 15.4049 12.8618C15.8691 12.3771 15.8691 11.6128 15.4049 11.1281L15.3057 11.0245C14.0522 9.71578 12.5728 8.64403 10.9386 7.86084C10.1701 7.49258 9.26954 8.00049 9.18711 8.8486L9.13308 9.40448C9.12595 9.47787 9.11912 9.55128 9.1126 9.6247L4.5 9.6247C3.80964 9.6247 3.25 10.1843 3.25 10.8747V13.1152ZM10.5532 13.5307C10.5107 13.1537 10.1913 12.8652 9.80797 12.8652H4.75L4.75 11.1247H9.80797C10.2041 11.1247 10.5319 10.8167 10.5565 10.4214C10.5747 10.1305 10.5978 9.83987 10.626 9.54959L10.6417 9.38824C11.9466 10.0607 13.1342 10.9409 14.1577 11.995C13.7303 12.4351 13.2744 12.8448 12.7932 13.2219C12.122 13.7478 11.4018 14.21 10.6417 14.6017L10.626 14.4403C10.5978 14.15 10.5747 13.8594 10.5565 13.5685C10.5557 13.5558 10.5546 13.5432 10.5532 13.5307Z" fill="pink"/>
-                </svg>
-        </a>
+      <ul class="links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#tvShows">TV Shows</a></li>
+        <li><a href="#movies">Movies</a></li>
+        <li><a href="#originals">More</a></li>
+        <li><a href="#">Recently Added</a></li>
+        <li><a target="_blank" href="https://github.com/luanasa">Portfolio</a></li>
+      </ul>
 
-      </nav>   
-    </header>
-    <!-- END OF HEADER -->
+      <ul class="user-group">
+        <li>
+          <div class="search">
+            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><g><path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path></g></svg>
+            <input placeholder="Search" type="search" class="input">
+          </div> 
+        </li>
+        <li class="profile-img">
+          <a href="./profile-page.html">
+            <img src="./assets/img/profile-1.png" alt="Profile image">
+          </a>
+        </li>
+        <li>
+          <a href="./home.html">
+          <img src="./assets/img/logoff.svg" alt="">
+         </a>
+      </li>
+      </ul>
+      
+    </nav>
     
     <!-- MAIN CONTAINER -->
     <section class="main-container" >
@@ -159,6 +149,5 @@
       <p>&copy 2022 K-flix, Inc.</p>
       <p>Luana Martins &copy 2022</p>
     </footer>
-  </div>
 </body>
 </html>

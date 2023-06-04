@@ -61,6 +61,7 @@ body h1 {
 		width: 150px; height:150px;
 		border: 6px solid #1f1f1f;
 		transition: all 300ms ease;
+		cursor: pointer;
 	}
 
 .profile-name {
